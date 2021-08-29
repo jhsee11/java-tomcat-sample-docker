@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 ADD **/*.war /usr/local/tomcat/webaapps
 
-EXPOSE 9095
+EXPOSE 8080
 
 CMD ["catalina.sh","run"]
