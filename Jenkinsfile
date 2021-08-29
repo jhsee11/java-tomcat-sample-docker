@@ -19,7 +19,7 @@ pipeline {
 
         stage('Create Tomcat Docker Image'){
             steps {
-                sh "export PATH=$PATH:/usr/local/bin"
+                echo "Testing 123"
                 sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
