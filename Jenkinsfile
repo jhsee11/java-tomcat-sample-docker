@@ -20,7 +20,7 @@ pipeline {
         stage('Create Tomcat Docker Image'){
             steps {
                 echo "Testing 123"
-                sh "docker build . --platform llinux/arm64/v8 -t tomcatsamplewebapp:${env.BUILD_ID}"
+                sh "docker build . --platform linux/arm64/v8 -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
     }
